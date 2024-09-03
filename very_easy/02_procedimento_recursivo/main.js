@@ -3,3 +3,12 @@ const chunk = (numbers) => {
 };
 
 console.log(chunk(5));
+
+//
+
+const recursiveChunk = (number) => {
+  if (number === 0) return "";
+  return number === 1 ? "chunk" : "chunk-" + recursiveChunk(number - 1);
+};
+
+console.log(recursiveChunk(5));
